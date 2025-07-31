@@ -105,6 +105,7 @@ job-application-manager/
 │   ├── manager.h          # Manager class header
 │   └── manager.cpp        # Manager class implementation
 ├── include/               # Header files directory
+├── build/                 # CMake build directory
 ├── data/
 │   └── applications.dat   # Data storage file
 ├── docs/
