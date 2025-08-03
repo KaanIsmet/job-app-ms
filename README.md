@@ -29,7 +29,7 @@ This Job Application Management System allows users to efficiently track their j
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/job-application-manager.git
-   cd job-application-manager
+   cd job-app-ms
    ```
 
 2. Build with CMake:
@@ -42,7 +42,7 @@ This Job Application Management System allows users to efficiently track their j
 
 3. Run the executable:
    ```bash
-   ./job_manager
+   ./job-app-ms
    ```
 
 ## Usage
@@ -71,43 +71,22 @@ Each job application entry contains:
 - Interview Dates
 - Follow-up Notes
 
-### Sample Workflow
-
-```bash
-# Start the application
-./job_manager
-
-# Add a new job application
-> Select option 1
-> Enter company: "Tech Corp"
-> Enter position: "Software Developer"
-> Enter status: "Applied"
-> [Continue with remaining fields...]
-
-# View all applications
-> Select option 2
-> [Displays formatted list of all applications]
-
-# Edit an existing application
-> Select option 4
-> Enter application ID: 1
-> [Modify desired fields]
-```
-
 ## File Structure
 
 ```
 job-application-manager/
 ├── src/
 │   ├── main.cpp           # Main program entry point
-│   ├── application.h      # Application class header
+│   ├── cli.cpp
 │   ├── application.cpp    # Application class implementation
-│   ├── manager.h          # Manager class header
 │   └── manager.cpp        # Manager class implementation
 ├── include/               # Header files directory
+|   ├── manager.hpp          # Manager class header
+|   ├── application.hpp      # Application class header
+|   └── cli.hpp 
 ├── build/                 # CMake build directory
 ├── data/
-│   └── applications.dat   # Data storage file
+│   └── applications.csv   # Data storage file
 ├── docs/
 │   └── user_guide.md      # Detailed user guide
 ├── tests/
@@ -118,7 +97,7 @@ job-application-manager/
 
 ## Data Storage
 
-The system uses binary file storage for efficient data persistence. Application data is automatically saved to `data/applications.dat` and loaded on program startup. Backup files are created periodically to prevent data loss.
+The system uses csv files. Application data is automatically saved to `data/applications.csv` and loaded on program startup.
 
 ## Building from Source
 
@@ -148,15 +127,6 @@ cmake -DCMAKE_INSTALL_PREFIX=/custom/path ..
 # Verbose build output
 make VERBOSE=1
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
-5. Create a Pull Request
-
 ## Testing
 
 Run the included unit tests using CMake:
@@ -172,24 +142,6 @@ Or run tests manually:
 cd build
 ./tests/test_manager
 ```
-
-## Future Enhancements
-
-- GUI interface using Qt or similar framework
-- Database integration (SQLite/MySQL)
-- Email integration for application reminders
-- Analytics and reporting features
-- Cloud synchronization capabilities
-- Mobile app companion
-
-## Troubleshooting
-
-**Common Issues:**
-
-- **File Permission Errors**: Ensure write permissions in the data directory
-- **Compilation Errors**: Verify C++11 support and proper include paths
-- **Data Corruption**: Use backup files located in `data/backups/`
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -197,17 +149,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 Kaan Ismet Okul | KaanIsmet7@gmail.com
-
-## Changelog
-
-### v1.0.0 (Current)
-- Initial release with basic CRUD functionality
-- File-based data persistence
-- Console interface implementation
-- Search and filter capabilities
-- C++20 standard compliance
-- CMake build system integration
-
----
-
-For detailed usage instructions and API documentation, please refer to the `docs/` directory.
