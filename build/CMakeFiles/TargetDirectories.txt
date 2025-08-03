@@ -1,0 +1,3 @@
+/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/build/CMakeFiles/job-app-ms.dir
+/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/build/CMakeFiles/edit_cache.dir
+/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/build/CMakeFiles/rebuild_cache.dir
