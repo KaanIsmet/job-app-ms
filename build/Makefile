@@ -153,6 +153,30 @@ src/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/job-app-ms.dir/build.make CMakeFiles/job-app-ms.dir/src/application.cpp.s
 .PHONY : src/application.cpp.s
 
+src/cli.o: src/cli.cpp.o
+.PHONY : src/cli.o
+
+# target to build an object file
+src/cli.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/job-app-ms.dir/build.make CMakeFiles/job-app-ms.dir/src/cli.cpp.o
+.PHONY : src/cli.cpp.o
+
+src/cli.i: src/cli.cpp.i
+.PHONY : src/cli.i
+
+# target to preprocess a source file
+src/cli.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/job-app-ms.dir/build.make CMakeFiles/job-app-ms.dir/src/cli.cpp.i
+.PHONY : src/cli.cpp.i
+
+src/cli.s: src/cli.cpp.s
+.PHONY : src/cli.s
+
+# target to generate assembly for a file
+src/cli.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/job-app-ms.dir/build.make CMakeFiles/job-app-ms.dir/src/cli.cpp.s
+.PHONY : src/cli.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... src/application.o"
 	@echo "... src/application.i"
 	@echo "... src/application.s"
+	@echo "... src/cli.o"
+	@echo "... src/cli.i"
+	@echo "... src/cli.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

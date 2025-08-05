@@ -1,5 +1,5 @@
-CMakeFiles/job-app-ms.dir/src/main.cpp.o: \
- /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/main.cpp \
+CMakeFiles/job-app-ms.dir/src/cli.cpp.o: \
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/cli.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/15.1.1/iostream \
  /usr/include/c++/15.1.1/bits/requires_hosted.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \

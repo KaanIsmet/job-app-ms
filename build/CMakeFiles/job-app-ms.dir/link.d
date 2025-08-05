@@ -4,6 +4,7 @@ bin/job-app-ms: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/job-app-ms.dir/src/main.cpp.o \
   CMakeFiles/job-app-ms.dir/src/application.cpp.o \
+  CMakeFiles/job-app-ms.dir/src/cli.cpp.o \
   CMakeFiles/job-app-ms.dir/src/manager.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -42,6 +43,8 @@ bin/job-app-ms: \
 CMakeFiles/job-app-ms.dir/src/main.cpp.o:
 
 CMakeFiles/job-app-ms.dir/src/application.cpp.o:
+
+CMakeFiles/job-app-ms.dir/src/cli.cpp.o:
 
 CMakeFiles/job-app-ms.dir/src/manager.cpp.o:
 

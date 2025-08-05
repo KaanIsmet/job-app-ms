@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/application.cpp" "CMakeFiles/job-app-ms.dir/src/application.cpp.o" "gcc" "CMakeFiles/job-app-ms.dir/src/application.cpp.o.d"
+  "/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/cli.cpp" "CMakeFiles/job-app-ms.dir/src/cli.cpp.o" "gcc" "CMakeFiles/job-app-ms.dir/src/cli.cpp.o.d"
   "/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/main.cpp" "CMakeFiles/job-app-ms.dir/src/main.cpp.o" "gcc" "CMakeFiles/job-app-ms.dir/src/main.cpp.o.d"
   "/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/manager.cpp" "CMakeFiles/job-app-ms.dir/src/manager.cpp.o" "gcc" "CMakeFiles/job-app-ms.dir/src/manager.cpp.o.d"
   "" "bin/job-app-ms" "gcc" "CMakeFiles/job-app-ms.dir/link.d"

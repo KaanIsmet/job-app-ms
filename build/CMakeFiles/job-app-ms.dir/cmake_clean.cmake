@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/job-app-ms.dir/link.d"
   "CMakeFiles/job-app-ms.dir/src/application.cpp.o"
   "CMakeFiles/job-app-ms.dir/src/application.cpp.o.d"
+  "CMakeFiles/job-app-ms.dir/src/cli.cpp.o"
+  "CMakeFiles/job-app-ms.dir/src/cli.cpp.o.d"
   "CMakeFiles/job-app-ms.dir/src/main.cpp.o"
   "CMakeFiles/job-app-ms.dir/src/main.cpp.o.d"
   "CMakeFiles/job-app-ms.dir/src/manager.cpp.o"
