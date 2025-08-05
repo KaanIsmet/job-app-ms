@@ -4,6 +4,10 @@
 #include <fstream>
 #include <string>
 
-void writeCSV(std::string filename);
-void readCSV(std::string filename);
-void editFile(
+using std::string;
+
+class Manager {
+private:
+	string filename;
+
+

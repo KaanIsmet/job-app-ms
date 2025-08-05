@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/application.hpp"
+#include "../include/cli.hpp"
 
 int main() {
 	
