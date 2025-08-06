@@ -11,3 +11,5 @@ void Application::setJobPosition(string jobPostion) { this->jobPosition = jobPos
 void Application::setSalary(string salary) { this->salary = salary; }
 void Application::setContactInfo(string contactInfo) { this->contactInfo = contactInfo; }
 void Application::setStatus(Status status) { this->status = status; }
+
+

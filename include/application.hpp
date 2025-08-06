@@ -34,7 +34,7 @@ public:
 		date = std::format("{:%m-%d-%Y}", std::chrono::floor<std::chrono::days>(now));
 	}
 
-	~Application();
+	~Application() {}
 	string getCompanyName() const;
 	string getJobPosition() const;
 	string getSalary() const;
