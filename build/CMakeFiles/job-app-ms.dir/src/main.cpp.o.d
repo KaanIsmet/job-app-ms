@@ -194,6 +194,7 @@ CMakeFiles/job-app-ms.dir/src/main.cpp.o: \
  /usr/include/c++/15.1.1/bits/align.h \
  /usr/include/c++/15.1.1/bits/chrono_io.h /usr/include/c++/15.1.1/iomanip \
  /usr/include/c++/15.1.1/bits/quoted_string.h \
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/../include/status.hpp \
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/../include/manager.hpp \
  /usr/include/c++/15.1.1/fstream \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/basic_file.h \

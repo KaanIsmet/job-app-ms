@@ -193,4 +193,5 @@ CMakeFiles/job-app-ms.dir/src/application.cpp.o: \
  /usr/include/c++/15.1.1/ext/concurrence.h \
  /usr/include/c++/15.1.1/bits/align.h \
  /usr/include/c++/15.1.1/bits/chrono_io.h /usr/include/c++/15.1.1/iomanip \
- /usr/include/c++/15.1.1/bits/quoted_string.h
+ /usr/include/c++/15.1.1/bits/quoted_string.h \
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/../include/status.hpp

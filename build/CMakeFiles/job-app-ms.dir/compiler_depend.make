@@ -3,6 +3,7 @@
 
 CMakeFiles/job-app-ms.dir/src/application.cpp.o: /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/application.cpp \
   /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/application.hpp \
+  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -482,6 +483,7 @@ CMakeFiles/job-app-ms.dir/src/main.cpp.o: /home/kaan/Desktop/projects/c++/system
   /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/application.hpp \
   /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/cli.hpp \
   /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/manager.hpp \
+  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -754,7 +756,9 @@ CMakeFiles/job-app-ms.dir/src/main.cpp.o: /home/kaan/Desktop/projects/c++/system
 
 CMakeFiles/job-app-ms.dir/src/manager.cpp.o: /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/manager.cpp \
   /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/application.hpp \
+  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp \
   /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/manager.hpp \
+  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -1097,8 +1101,6 @@ CMakeFiles/job-app-ms.dir/src/application.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h:
 
-/usr/include/bits/floatn.h:
-
 /usr/include/c++/15.1.1/bits/move.h:
 
 /usr/include/c++/15.1.1/bits/stl_heap.h:
@@ -1257,6 +1259,22 @@ CMakeFiles/job-app-ms.dir/src/manager.cpp.o:
 
 /usr/include/bits/types/__sigset_t.h:
 
+/usr/include/c++/15.1.1/bits/ostream.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/15.1.1/fstream:
+
+/usr/include/asm/types.h:
+
+/usr/include/c++/15.1.1/bits/cxxabi_init_exception.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/c++/15.1.1/bits/chrono_io.h:
+
+/usr/include/bits/thread-shared-types.h:
+
 /usr/include/alloca.h:
 
 /usr/include/bits/stdint-least.h:
@@ -1275,41 +1293,9 @@ CMakeFiles/job-app-ms.dir/src/manager.cpp.o:
 
 /usr/include/c++/15.1.1/debug/debug.h:
 
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/c++/15.1.1/bits/alloc_traits.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/application.hpp:
-
-/usr/include/c++/15.1.1/bits/ostream.h:
-
-/usr/include/c++/15.1.1/fstream:
-
-/usr/include/asm/types.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/lib/libc.so:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/c++/15.1.1/ext/atomicity.h:
-
 /usr/include/c++/15.1.1/bits/new_allocator.h:
 
 /usr/include/c++/15.1.1/cstdlib:
-
-/usr/include/c++/15.1.1/bits/cxxabi_init_exception.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
 /usr/include/bits/types/__mbstate_t.h:
 
@@ -1332,6 +1318,28 @@ CMakeFiles/job-app-ms.dir/src/manager.cpp.o:
 /usr/include/c++/15.1.1/chrono:
 
 /usr/include/c++/15.1.1/optional:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/15.1.1/bits/alloc_traits.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/application.hpp:
+
+/usr/lib/libc.so:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/c++/15.1.1/ext/atomicity.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
 /usr/include/bits/select.h:
 
@@ -1393,15 +1401,11 @@ CMakeFiles/job-app-ms.dir/src/manager.cpp.o:
 
 /usr/include/bits/types/sigset_t.h:
 
-/usr/include/c++/15.1.1/bits/stl_vector.h:
-
 /usr/include/asm-generic/int-ll64.h:
 
+/usr/include/c++/15.1.1/bits/stl_vector.h:
+
 /usr/include/c++/15.1.1/cwctype:
-
-/usr/include/c++/15.1.1/bits/chrono_io.h:
-
-/usr/include/bits/thread-shared-types.h:
 
 /usr/include/bits/endian.h:
 
@@ -1592,6 +1596,8 @@ CMakeFiles/job-app-ms.dir/src/manager.cpp.o:
 /usr/include/endian.h:
 
 /usr/include/errno.h:
+
+/home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp:
 
 /usr/include/features-time64.h:
 
