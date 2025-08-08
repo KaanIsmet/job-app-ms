@@ -199,7 +199,9 @@ CMakeFiles/job-app-ms.dir/src/manager.cpp.o: \
  /usr/include/c++/15.1.1/bits/align.h \
  /usr/include/c++/15.1.1/bits/chrono_io.h /usr/include/c++/15.1.1/iomanip \
  /usr/include/c++/15.1.1/bits/quoted_string.h \
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp \
  /usr/include/c++/15.1.1/filesystem /usr/include/c++/15.1.1/bits/fs_fwd.h \
  /usr/include/c++/15.1.1/bits/fs_path.h /usr/include/c++/15.1.1/codecvt \
  /usr/include/c++/15.1.1/bits/fs_dir.h \
- /usr/include/c++/15.1.1/bits/fs_ops.h
+ /usr/include/c++/15.1.1/bits/fs_ops.h \
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/../include/status.hpp

@@ -4,6 +4,7 @@
 CMakeFiles/job-app-ms.dir/src/application.cpp.o
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/application.cpp
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/application.hpp
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -485,6 +486,7 @@ CMakeFiles/job-app-ms.dir/src/main.cpp.o
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/application.hpp
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/cli.hpp
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/manager.hpp
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -758,7 +760,9 @@ CMakeFiles/job-app-ms.dir/src/main.cpp.o
 CMakeFiles/job-app-ms.dir/src/manager.cpp.o
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/src/manager.cpp
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/application.hpp
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp
  /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/manager.hpp
+ /home/kaan/Desktop/projects/c++/systems-programming/job-app-ms/include/status.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
