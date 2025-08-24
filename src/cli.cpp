@@ -10,8 +10,8 @@ void print() {
 
 void help() {
 	std::cout << "Command lists\n"
-		  << "============="
-		  << "/show\n"
+		  << "=============\n"
+		  << "/list\n"
 		  << "/append\n"
 		  << "/edit\n"
 		  << "/delete\n"

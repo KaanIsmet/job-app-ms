@@ -6,6 +6,7 @@
 #include <string>
 #include <application.hpp>
 #include <filesystem>
+#include "status.hpp"
 
 using std::string;
 

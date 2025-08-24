@@ -5,11 +5,11 @@
 #include "../include/manager.hpp"
 
 int main() {
-	std::string name, position, salary, contact;
+	std::string name, position, salary, contact, fileName = "sample.csv";
 	Status status = Status::PENDING;
 	print();
 
-	Manager manager("sample.csv");	
+	Manager manager(fileName);	
 	while (true) {
 		Command c = input();
 		//use if - else statements for the prompts	
@@ -23,6 +23,7 @@ int main() {
 			std::cout << "Enter Contact info: " << std::endl;
 			std::cin >> contact;
 			Application app(name, position, salary, contact, status);
+			manager.addJob(app);
 
 		}
 		else if (c == Command::EDIT) {
@@ -34,7 +35,7 @@ int main() {
 		}
 
 		else if (c == Command::LIST) {
-
+			manager.readList();
 		}
 
 		else if (c == Command::HELP) {
