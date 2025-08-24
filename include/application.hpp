@@ -5,14 +5,10 @@
 #include <format>
 #include <chrono>
 #include <sstream>
+#include "status.hpp"
 
 using std::string;
 
-enum Status {
-	PENDING,
-	REJECTED,
-	ACCEPTED
-};
 
 class Application {
 private:
