@@ -2,7 +2,10 @@
 #include <sstream>
 using std::string;
 
-void Manager::addJob(Application app) const {
+
+void Manager::addJob(Application app) {
+	applications.insert({nextId, app});
+	nextId++;
 	std::stringstream ss;
 	string status;
 	if (app.getStatus() == Status::PENDING)
@@ -37,8 +40,19 @@ void Manager::readList() const {
 }
 
 void Manager::deleteJob(Application app) const {
-	string name;
+	//create a temp file to delete the line and copy the contents
+	//have the original file copy the temp file
+	//delete the temp file
+	string line;
+	std::ifstream file(fileName);
+	std::ofstream temp("temp.csv");
 
+	while (std::getline(file, line)) {
+		
+	}
+
+	file.close();
+	temp.close();
 
 }
 
