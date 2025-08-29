@@ -5,6 +5,7 @@
 #include <format>
 #include <chrono>
 #include <sstream>
+#include <vector>
 #include "status.hpp"
 
 using std::string;
@@ -31,6 +32,18 @@ public:
 		date = std::format("{:%m-%d-%Y}", std::chrono::floor<std::chrono::days>(now));
 	}
 
+	Application(std::vector<string> data) {
+			setCompanyName(data[0]);
+			setJobPosition(data[1]);
+			setSalary(data[2]);
+			setContactInfo(data[3]);
+			setStatus(data[4]);
+
+			auto now = std::chrono::system_clock::now();
+			date = std::format("{:%m-%d-%Y}", std::chrono::floor<std::chrono::days>(now));
+	}
+	
+
 	~Application() {}
 	string getCompanyName() const;
 	string getJobPosition() const;
@@ -44,5 +57,6 @@ public:
 	void setSalary(string salary);
 	void setContactInfo(string info);
 	void setStatus(Status status);
+	void setStatus(string status);
 };
 #endif
