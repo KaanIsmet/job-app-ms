@@ -53,7 +53,7 @@ public:
 	void readList() const;
 	void editJob(int jobId, Application app);
 	void deleteJob(int jobId);
-
+	string getStatusString(Status status) const;
 	string trim(const string& str) const {
 		size_t start = str.find_first_not_of(" \t\n\r\f\v");
 		if (start == std::string::npos) return "";
