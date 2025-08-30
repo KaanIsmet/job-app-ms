@@ -2,21 +2,23 @@
 #include <sstream>
 using std::string;
 
+string Manager::getStatusString(Status status) const {
+	if (status == Status::PENDING)
+		return "Pending";
+	else if (status == Status::REJECTED)
+		return "Rejected";
+	else if (status == Status::ACCEPTED)
+		return "Accepted";
+	else 
+		return "Invalid";
+}
+
 
 void Manager::addJob(Application app) {
 	applications.insert({nextId, app});
 	nextId++;
 	std::stringstream ss;
-	string status;
-	if (app.getStatus() == Status::PENDING)
-		status = "Pending";
-	else if (app.getStatus() == Status::REJECTED)
-		status = "Rejected";
-	else if (app.getStatus() == Status::ACCEPTED)
-		status = "Accepted";
-	else 
-		status = "Unknown";
-
+	string status = getStatusString(app.getStatus());
 	std::ofstream file(fileName, std::ios_base::app);
 	ss << app.getCompanyName() << ", " 
 	   << app.getJobPosition() << ", "
@@ -49,11 +51,12 @@ void Manager::deleteJob(int jobId) {
 	ss << std::endl;
 	for (const auto& entry : applications) {
 		auto app = entry.second;
+		string status = getStatusString(app.getStatus());
 		ss << app.getCompanyName() << ", " 
 			<< app.getJobPosition() << ", " 
 			<< app.getSalary() << ", " 
 			<< app.getContactInfo() << ", "
-			<< app.getStatus() << ", "
+			<< status << ", "
 			<< app.getDate() << std::endl;
 	}
 	temp << ss.str();
@@ -62,4 +65,26 @@ void Manager::deleteJob(int jobId) {
 
 }
 
-void Manager::editJob(Application app) {}
+void Manager::editJob(int jobId, Application app) {
+	auto it = applications.find(jobId);
+	if (it != applications.end()) {
+		it->second = app;
+		std::ofstream temp("temp.csv");
+		std::stringstream ss;
+		ss << headers;
+		ss << std::endl;
+		for (const auto& entry : applications) {
+			auto app = entry.second;
+			string status = getStatusString(app.getStatus());
+			ss << app.getCompanyName() << ", " 
+				<< app.getJobPosition() << ", " 
+				<< app.getSalary() << ", " 
+				<< app.getContactInfo() << ", "
+				<< status << ", "
+				<< app.getDate() << std::endl;
+		}
+		temp << ss.str();
+		temp.close();
+		std::filesystem::rename("temp.csv", fileName);
+	}
+}
