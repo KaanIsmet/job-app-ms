@@ -18,7 +18,6 @@ void Manager::addJob(Application app) {
 		status = "Unknown";
 
 	std::ofstream file(fileName, std::ios_base::app);
-	ss << std::endl;
 	ss << app.getCompanyName() << ", " 
 	   << app.getJobPosition() << ", "
 	   << app.getSalary() << ", "
@@ -39,21 +38,28 @@ void Manager::readList() const {
 	file.close();
 }
 
-void Manager::deleteJob(Application app) const {
-	//create a temp file to delete the line and copy the contents
-	//have the original file copy the temp file
-	//delete the temp file
-	string line;
-	std::ifstream file(fileName);
+void Manager::deleteJob(int jobId) {
+	//create a temp file to delete the app and copy the contents
+	//have the temp file close
+	//rename the temp file to original file
+	applications.erase(jobId);
 	std::ofstream temp("temp.csv");
-
-	while (std::getline(file, line)) {
-		
+	std::stringstream ss;
+	ss << headers;
+	ss << std::endl;
+	for (const auto& entry : applications) {
+		auto app = entry.second;
+		ss << app.getCompanyName() << ", " 
+			<< app.getJobPosition() << ", " 
+			<< app.getSalary() << ", " 
+			<< app.getContactInfo() << ", "
+			<< app.getStatus() << ", "
+			<< app.getDate() << std::endl;
 	}
-
-	file.close();
+	temp << ss.str();
 	temp.close();
+	std::filesystem::rename("temp.csv", fileName);
 
 }
 
-void Manager::editJob(Application app) const {}
+void Manager::editJob(Application app) {}
