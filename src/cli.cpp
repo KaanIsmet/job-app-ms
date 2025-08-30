@@ -12,7 +12,7 @@ void help() {
 	std::cout << "Command lists\n"
 		  << "=============\n"
 		  << "/list\n"
-		  << "/append\n"
+		  << "/add\n"
 		  << "/edit\n"
 		  << "/delete\n"
 		  << "/exit\n";

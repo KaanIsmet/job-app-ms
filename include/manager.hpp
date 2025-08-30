@@ -15,12 +15,12 @@ using std::string;
 class Manager {
 private:
 	string fileName;
+	string headers = "Company, Position, Salary, Contact, Status, Date";
 	std::unordered_map<int,Application> applications;
 	int nextId = 1;
 public:
 	Manager() : fileName("unknown.txt") {}
 	Manager(string fileName) : fileName(fileName) {
-		std::string headers = "Company, Position, Salary, Contact, Status, Date";
 		std::stringstream ss;
 		ss << headers;
 		
@@ -51,8 +51,8 @@ public:
 	~Manager() {}
 	void addJob(Application app);
 	void readList() const;
-	void editJob(Application app) const;
-	void deleteJob(Application app) const;
+	void editJob(Application app);
+	void deleteJob(int jobId);
 
 	string trim(const string& str) const {
 		size_t start = str.find_first_not_of(" \t\n\r\f\v");

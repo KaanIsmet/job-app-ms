@@ -31,7 +31,11 @@ int main() {
 		}
 
 		else if (c == Command::DELETE) {
-
+			int id;
+			std::cout << "Enter company's number to delete" << std::endl;
+			std::cin >> id;
+			manager.deleteJob(id);
+			std::cout << "Company: " << id << " has been deleted.\n";
 		}
 
 		else if (c == Command::LIST) {
