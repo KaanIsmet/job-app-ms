@@ -62,4 +62,25 @@ void Manager::deleteJob(int jobId) {
 
 }
 
-void Manager::editJob(Application app) {}
+void Manager::editJob(int jobId, Application app) {
+	auto it = applications.find(jobId);
+	if (it != applications.end()) {
+		it->second = app;
+		std::ofstream temp("temp.csv");
+		std::stringstream ss;
+		ss << headers;
+		ss << std::endl;
+		for (const auto& entry : applications) {
+			auto app = entry.second;
+			ss << app.getCompanyName() << ", " 
+				<< app.getJobPosition() << ", " 
+				<< app.getSalary() << ", " 
+				<< app.getContactInfo() << ", "
+				<< app.getStatus() << ", "
+				<< app.getDate() << std::endl;
+		}
+		temp << ss.str();
+		temp.close();
+		std::filesystem::rename("temp.csv", fileName);
+	}
+}

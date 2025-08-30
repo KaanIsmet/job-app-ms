@@ -27,12 +27,24 @@ int main() {
 
 		}
 		else if (c == Command::EDIT) {
-
+			int id;
+			std::cout << "Enter company's number to edit." << std::endl;
+			std::cin >> id;
+			std::cout << "Enter Company's name: " << std::endl;
+                        std::cin >> name;
+                        std::cout << "Enter Job position: " << std::endl;
+                        std::cin >> position;
+                        std::cout << "Enter Salary: " << std::endl;
+                        std::cin >> salary;
+                        std::cout << "Enter Contact info: " << std::endl;
+                        std::cin >> contact;
+                        Application app(name, position, salary, contact, status);
+                        manager.editJob(id, app);
 		}
 
 		else if (c == Command::DELETE) {
 			int id;
-			std::cout << "Enter company's number to delete" << std::endl;
+			std::cout << "Enter company's number to delete." << std::endl;
 			std::cin >> id;
 			manager.deleteJob(id);
 			std::cout << "Company: " << id << " has been deleted.\n";

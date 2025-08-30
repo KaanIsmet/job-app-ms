@@ -51,7 +51,7 @@ public:
 	~Manager() {}
 	void addJob(Application app);
 	void readList() const;
-	void editJob(Application app);
+	void editJob(int jobId, Application app);
 	void deleteJob(int jobId);
 
 	string trim(const string& str) const {
